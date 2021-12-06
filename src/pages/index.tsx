@@ -5,10 +5,6 @@ const Home: NextPage = () => (
   <div className="container">
     <Head>
       <title>Enes Yıldırım | Kişisel Blog</title>
-      <meta charSet="UTF-8" />
-      <meta name="description" content="Enes Yıldırım'ın öğretici ve eğlenceli blogları." />
-      <meta name="keywords" content="Developer, Frontend, Psikoloji, Geliştirici, Linux" />
-      <meta name="author" content="Enes Yıldırım" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
     <div className="c-small flex-center px-5 py-4 w-full">
