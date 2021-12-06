@@ -10,9 +10,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta charSet="UTF-8" />
-          <meta name="description" content="Enes Yıldırım'ın öğretici ve eğlenceli blogları." />
-          <meta name="keywords" content="Developer, Frontend, Psikoloji, Geliştirici, Linux" />
-          <meta name="author" content="Enes Yildirim aka Enes5519" />
+          <meta name="author" content="Enes Yildirim" />
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
           <link rel="alternate icon" href="/favicon.svg" />

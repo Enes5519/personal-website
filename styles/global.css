@@ -18,14 +18,6 @@
     h3 {
         @apply font-h3;
     }
-
-    h4 {
-        @apply font-h4;
-    }
-
-    h5 {
-        @apply font-h5;
-    }
 }
 
 @layer utilities {
@@ -44,14 +36,6 @@
 
     .font-h3 {
         @apply text-2xl font-bold;
-    }
-
-    .font-h4 {
-        @apply text-xl font-bold;
-    }
-
-    .font-h5 {
-        @apply text-lg font-bold;
     }
 
     .flex-center {

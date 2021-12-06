@@ -64,6 +64,19 @@
         ],
         "max-len": [0, { "code": 120, "ignoreUrls": true }],
         "jsx-a11y/media-has-caption": "off",
-        "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }]
+        "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
     }
 }
