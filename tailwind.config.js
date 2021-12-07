@@ -19,8 +19,10 @@ module.exports = {
       white: "#fff",
       grey: {
         100: "#F2F2F7",
+        300: "#c7c7cc",
         400: "#AEAEB2",
         DEFAULT: "#8E8E93",
+        700: "#48484a",
         800: "#2c2c2e",
         900: "#1C1C1E",
       },
@@ -30,5 +32,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp"), require("@tailwindcss/aspect-ratio")],
 };

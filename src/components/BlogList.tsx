@@ -1,6 +1,6 @@
 import React from "react";
-import Link from "next/link";
 import { Post } from "@/types";
+import BlogItem from "@/components/BlogItem";
 
 export interface BlogProps {
   posts?: Post[];
@@ -11,11 +11,7 @@ const BlogList = ({ posts }: BlogProps) => {
     return (
       <ul className="mt-6">
         {posts.map((post) => (
-          <li key={post.slug} className="my-4">
-            <Link href={post.url?.toString() || post.slug}>
-              <a className="hover:underline">{post.frontMatter?.title}</a>
-            </Link>
-          </li>
+          <BlogItem key={post.slug} post={post} />
         ))}
       </ul>
     );

@@ -9,6 +9,8 @@ interface Post
     title: string;
     excerpt?: string;
     category?: string[];
+    image?: string;
+    date?: Date;
   }> {
   relationships?: {
     category: Category[];
