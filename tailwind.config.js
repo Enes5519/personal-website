@@ -1,7 +1,7 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
-  mode: "jit",
-  purge: ["./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.{js,ts,jsx,tsx}", "./blogs/**/*.md"],
   theme: {
     container: {
       center: true,
@@ -26,10 +26,8 @@ module.exports = {
         800: "#2c2c2e",
         900: "#1C1C1E",
       },
+      sky: colors.sky,
     },
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
   plugins: [require("@tailwindcss/line-clamp"), require("@tailwindcss/aspect-ratio")],

@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply text-grey-100 bg-grey-900 text-lg;
+        @apply text-grey-100 bg-grey-900 text-xl;
     }
 
     h1 {
@@ -17,6 +17,15 @@
 
     h3 {
         @apply font-h3;
+    }
+
+    code{
+        @apply rounded-lg text-lg;
+    }
+
+    blockquote{
+        @apply bg-opacity-30 border-l-4 bg-sky-500 border-sky-500;
+        @apply py-4 rounded-lg text-lg;
     }
 }
 
