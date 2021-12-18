@@ -8,7 +8,7 @@ category:
 - yazilim
 ---
 
-Öncelikle herkese merhabalar. Bu ilk yazımda size useState'i nedir, nasıl daha efektif kullanabiliriz gibi soruların 
+Öncelikle herkese merhabalar. Bu ilk yazımda size useState nedir, nasıl daha efektif kullanabiliriz gibi soruların 
 yanıtlarına bakacağız.
 
 ## State nedir?

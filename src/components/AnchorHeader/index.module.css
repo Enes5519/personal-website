@@ -1,0 +1,13 @@
+.header{
+    @apply relative c-small my-8;
+}
+
+.anchor{
+    @apply opacity-0 absolute text-grey;
+    transform: translate(-1em, -2px);
+    width: 1em;
+}
+
+.header:hover .anchor{
+    @apply opacity-100;
+}
