@@ -21,6 +21,17 @@ const PostPage = ({ post }: PostPageProps) => {
       <Head>
         <title>{post.frontMatter?.title}</title>
         <meta name="description" content={post.frontMatter?.excerpt} />
+        <meta property="og:title" content={post.frontMatter?.title} />
+        <meta property="og:description" content={post.frontMatter?.excerpt} />
+        <meta property="og:type" content="article" />
+        {post.frontMatter?.image && (
+          <meta property="og:image" content={`https://enesyildirim.me${post.frontMatter.image}`} />
+        )}
+        <meta property="og:article:modified_time" content={post.frontMatter?.date?.toISOString()} />
+        <meta property="og:article:author" content="Enes Yildirim" />
+        {post.frontMatter?.category?.map((c) => (
+          <meta key={c} property="og:article:tag" content={c} />
+        ))}
       </Head>
       <article className="py-16">
         <div className="c-small">
