@@ -1,6 +1,6 @@
 ---
 title: Google'da profesyonel şekilde arama yapın
-excerpt: Google'da nasıl daha efektif bir şekilde arama yapabiliriz. Aradığımız cevaba nasıl hızlı ulaşırız. Google'u daha profesyonel kullanmak.
+excerpt: Google'da nasıl daha efektif bir şekilde arama yapabiliriz? Aradığımız cevaba nasıl daha hızlı ulaşırız? Google'u nasıl daha profesyonel kullanabiliriz?
 image: /posters/google-profesyonel-arama.png
 date: 2022-06-05
 category:
