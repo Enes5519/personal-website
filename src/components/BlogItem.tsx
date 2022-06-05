@@ -3,10 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Post } from "@/types";
 
-const BlogItem = ({ post }: { post: Post }) => {
-  console.log(post);
-
-  return (
+const BlogItem = ({ post }: { post: Post }) => (
     <li key={post.slug} className="my-4 gap-4 lg:gap-8 flex flex-col lg:flex-row items-center lg:items-start h-[174px]">
       {post.frontMatter?.image && (
         <Link href={post.url?.toString() || post.slug}>
@@ -29,6 +26,5 @@ const BlogItem = ({ post }: { post: Post }) => {
       </div>
     </li>
   );
-};
 
 export default BlogItem;

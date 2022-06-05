@@ -1,5 +1,6 @@
 .header{
     @apply relative c-small my-8;
+    scroll-margin-top: 4rem;
 }
 
 .anchor{

@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply text-grey-100 bg-grey-900 text-xl;
+        @apply text-grey-100 bg-grey-900 text-xl leading-8;
     }
 
     h1 {
@@ -20,7 +20,7 @@
     }
 
     code{
-        @apply rounded-lg text-lg;
+        @apply text-lg bg-grey-700 p-1 rounded;
     }
 
     blockquote{
@@ -49,6 +49,37 @@
 
     .flex-center {
         @apply flex items-center justify-center;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0;
+        min-width: 350px;
+    }
+    table th, table td {
+        @apply border-r border-b border-grey-700 p-2;
+    }
+    table th:first-child, table td:first-child {
+        @apply border-l border-grey-700;
+    }
+    table th {
+        @apply border-t border-grey-700 uppercase text-left;
+    }
+
+    table tr:first-child th:first-child {
+        @apply rounded-tl-lg;
+    }
+
+    table tr:first-child th:last-child {
+        @apply rounded-tr-lg;
+    }
+
+    table tr:last-child td:first-child {
+        @apply rounded-bl-lg;
+    }
+
+    table tr:last-child td:last-child {
+        @apply rounded-br-lg;
     }
 }
 
