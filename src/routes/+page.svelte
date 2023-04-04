@@ -28,6 +28,6 @@
 	}
 
 	h2 {
-		margin-top: 8rem;
+		margin-top: 6rem;
 	}
 </style>
