@@ -20,3 +20,5 @@ export const load = (async () => {
 		blogs
 	};
 }) satisfies PageServerLoad;
+
+export const prerender = true;

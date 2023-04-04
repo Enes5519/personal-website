@@ -2,6 +2,8 @@ import parseHeaders from '$lib/utils/parseHeaders';
 import fs from 'fs';
 import type { PageServerLoad } from './$types';
 
+export const prerender = true;
+
 export const load = (async () => {
 	const dir = './src/lib/blogs';
 	const files = fs.readdirSync(dir).slice(0, 3);
