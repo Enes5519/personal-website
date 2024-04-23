@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import Prism from 'prismjs';
 import { mdsvex } from 'mdsvex';
 
@@ -11,20 +11,20 @@ function highlighter(code, lang) {
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: [
-		vitePreprocess(),
 		mdsvex({
 			extensions: ['.md'],
 			layout: './src/lib/components/layout/PostLayout.svelte',
 			highlight: {
-				highlighter
-			}
-		})
+				highlighter,
+			},
+		}),
+		vitePreprocess(),
 	],
 	extensions: ['.svelte', '.md'],
 
 	kit: {
-		adapter: adapter()
-	}
+		adapter: adapter(),
+	},
 };
 
 export default config;

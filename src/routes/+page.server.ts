@@ -13,12 +13,12 @@ export const load = (async () => {
 
 			return {
 				...headers,
-				slug: filename.slice(0, -3)
+				slug: filename.slice(0, -3),
 			};
-		})
+		}),
 	);
 
 	return {
-		lastThreeBlogs
+		lastThreeBlogs,
 	};
 }) satisfies PageServerLoad;

@@ -1,16 +1,14 @@
 <script lang="ts">
-	$: isAnchor = !!$$restProps.href;
-	$: props = {
-		type: isAnchor ? undefined : 'button',
-		...$$restProps
-	};
-
+	export let href: string | null = null;
 	export let variant: 'primary' | 'text' = 'primary';
+
+	$: isAnchor = href !== null;
 </script>
 
 <svelte:element
 	this={isAnchor ? 'a' : 'button'}
-	{...props}
+	type={isAnchor ? undefined : "button"}
+	{...$$restProps}
 	class="button"
 	class:btnText={variant === 'text'}
 	class:btnPrimary={variant === 'primary'}

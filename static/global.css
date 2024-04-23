@@ -9,8 +9,8 @@
 	--color-grey-900: #1c1c1e;
 	--color-amber: #ffc107;
 
-	--font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-		'Segoe UI Emoji', 'Segoe UI Symbol';
+	--font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol';
 	--font-lg: 1.125rem/1.75rem var(--font-family);
 	--font-sm: 0.875rem/1.25rem var(--font-family);
 }

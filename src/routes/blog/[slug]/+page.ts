@@ -18,11 +18,11 @@ export const load = (async ({ params }) => {
 
 		return {
 			component: post.default,
-			meta: post.metadata as BlogPost['metadata']
+			meta: post.metadata as BlogPost['metadata'],
 		};
 	} catch (err) {
 		console.log(err);
-		throw error(404, 'Not found');
+		error(404, 'Not found');
 	}
 }) satisfies PageLoad;
 

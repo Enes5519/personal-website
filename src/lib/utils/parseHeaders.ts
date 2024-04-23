@@ -8,7 +8,7 @@ export default function parseHeaders(filePath: string): Promise<BlogPost['metada
 		const readStream = fs.createReadStream(filePath);
 		const rl = readline.createInterface({
 			input: readStream,
-			crlfDelay: Infinity
+			crlfDelay: Infinity,
 		});
 
 		let params = '';
